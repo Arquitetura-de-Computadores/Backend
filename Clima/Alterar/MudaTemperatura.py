@@ -7,7 +7,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")
 from Keys import link
 
 caminho = "Clima"
-graus = {'temperatura': '35'}
+graus = {'temperatura': 39}
 
 #(Pach):
 def mudaTemperatura(link, caminho, graus):

@@ -13,5 +13,3 @@ def buscaLuz():
     return condicaoLuz.json()
 
 condicaoLuz = buscaLuz()
-
-print(condicaoLuz)

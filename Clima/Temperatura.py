@@ -15,5 +15,3 @@ def buscaTemperatura():
     return temperatura.json()
 
 temperatura = buscaTemperatura()
-
-print(temperatura)

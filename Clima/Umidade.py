@@ -13,4 +13,3 @@ def buscaUmidade():
     return umidade.json()
 
 umidade = buscaUmidade()
-print(umidade)

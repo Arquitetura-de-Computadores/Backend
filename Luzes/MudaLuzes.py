@@ -7,7 +7,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from Keys import link
 
 caminho = "Luzes"
-condicao = {'luz': True}
+condicao = {'luz': False}
 
 #(Pach):
 def mudaLuz(link, caminho, condicao):

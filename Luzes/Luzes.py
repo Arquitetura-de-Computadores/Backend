@@ -6,15 +6,12 @@ import json
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 from Keys import link
 
-caminho = "Luzes"
-condicao = {'luz': True}
-
 #(Get):
 def buscaLuz():
+    caminho = "Luzes/luz"
     condicaoLuz = requests.get(f'{link}{caminho}/.json')
-    return condicaoLuz
+    return condicaoLuz.json()
 
 condicaoLuz = buscaLuz()
 
 print(condicaoLuz)
-print(condicaoLuz.text)

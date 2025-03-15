@@ -5,7 +5,7 @@ from Clima.Temperatura import buscaTemperatura
 from Clima.Umidade import buscaUmidade
 from Luzes.Luzes import buscaLuz
 from Trafego.Trafego import buscaTrafego, carregar_mapeamento_ruas
-import json
+from Coleta.Coleta import buscaColeta, carregar_mapeamento_coleta
 
 app = Flask(__name__)
 CORS(app)
@@ -68,6 +68,38 @@ def get_trafego():
             })
 
     return jsonify({'trafego': ruas_formatadas})
+
+@app.route('/coleta', methods=['GET'])
+def get_coleta():
+    coletas = buscaColeta()
+    
+    if not coletas:
+        return jsonify({'error': 'Coleta não disponível.'}), 400
+
+    mapeamento_coletas = carregar_mapeamento_coleta()
+
+    coletas_formatadas = []
+    for chave_coleta, dados_coleta in coletas.items():
+        if 'id' not in dados_coleta:
+            print(f"Erro: ID ausente na coleta {chave_coleta}")
+            continue
+
+        coleta_id = str(dados_coleta['id'])
+        coleta_info = mapeamento_coletas.get(coleta_id)
+
+        if coleta_info:
+            coletas_formatadas.append({
+                "label": f"{coleta_info['rua']}, {coleta_info['bairro']}",
+                "status": dados_coleta['status']
+            })
+        else:
+            print(f"ID {coleta_id} não encontrado no mapeamento.")
+            coletas_formatadas.append({
+                "label": "Coleta desconhecida",
+                "status": dados_coleta['status']
+            })
+
+    return jsonify({'coletas': coletas_formatadas})
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5050, debug=True)

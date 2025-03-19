@@ -90,13 +90,15 @@ def get_coleta():
         if coleta_info:
             coletas_formatadas.append({
                 "label": f"{coleta_info['rua']}, {coleta_info['bairro']}",
-                "status": dados_coleta['status']
+                "status": dados_coleta['status'],
+                "peso": dados_coleta['peso']
             })
         else:
             print(f"ID {coleta_id} não encontrado no mapeamento.")
             coletas_formatadas.append({
                 "label": "Coleta desconhecida",
-                "status": dados_coleta['status']
+                "status": dados_coleta['status'],
+                "peso": dados_coleta['peso']
             })
 
     return jsonify({'coletas': coletas_formatadas})

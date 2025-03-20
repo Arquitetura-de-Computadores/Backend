@@ -1,5 +1,7 @@
 {
-    "1": {"rua": "Rua Laranja", "bairro": "Doce"},
-    "2": {"rua": "Rua Rato", "bairro": "Cinema"},
-    "3": {"rua": "Rua Perna", "bairro": "Janela"}
+    "1": {"rua": "Avenida Eduardo Fróes da Mota", "bairro": "Mangabeira"},
+    "2": {"rua": "Rua Brasil", "bairro": "Papagaio"},
+    "3": {"rua": "Rua Boa Vista", "bairro": "Santa Mônica"},
+    "4": {"rua": "Rua Barcarema", "bairro": "Subaé"},
+    "5": {"rua": "Praça da Serra", "bairro": "Lagoa Grande"}
 }

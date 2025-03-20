@@ -1,13 +1,13 @@
 {
-  "1": {"rua": "Rua Abacaxi", "bairro": "Puff"},
-  "2": {"rua": "Rua Laranja", "bairro": "Doce"},
-  "3": {"rua": "Rua Mangaba", "bairro": "Verde"},
-  "4": {"rua": "Rua Pipoca", "bairro": "Copo"},
-  "5": {"rua": "Rua Lixo", "bairro": "Panela"},
-  "6": {"rua": "Rua Peixe", "bairro": "Frito"},
-  "7": {"rua": "Rua Rato", "bairro": "Cinema"},
-  "8": {"rua": "Rua Ventilador", "bairro": "Picles"},
-  "9": {"rua": "Rua Cirilo", "bairro": "Som"},
-  "10": {"rua": "Rua Perna", "bairro": "Janela"}
+  "1": {"rua": "Rua Aníbal Tavares", "bairro": "Rua Nova"},
+  "2": {"rua": "Rua Arnold Silva", "bairro": "Queimadinha"},
+  "3": {"rua": "Avenida Iguatemi", "bairro": "Mangabeira"},
+  "4": {"rua": "Rua Baraúnas", "bairro": "Limoiero"},
+  "5": {"rua": "Rua Ilhéus", "bairro": "Kalilândia"},
+  "6": {"rua": "Rua Itororó", "bairro": "Rua Nova"},
+  "7": {"rua": "Vila Conquista", "bairro": "Kalilândia"},
+  "8": {"rua": "Rua Acajutiba", "bairro": "Tomba"},
+  "9": {"rua": "Rua Aires", "bairro": "Tomba"},
+  "10": {"rua": "Rua Água de Ouro", "bairro": "Subaé"}
 }
   
